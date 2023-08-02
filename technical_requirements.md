@@ -1,0 +1,28 @@
+Technical Analysis
+- PreSales order model
+    - [X] Create new model for preorder
+    - [X] Add field: Name of the preorder (defaults to PS-%d)
+    - [X] Add field: Customer id
+    - [X] Add field: state as SelectionField of ["Draft", "Confirmed"] acting as stage
+- Create order line model containing:
+    - [X] Product id field
+    - [X] Quantity float field
+    - [X] Price float file
+    - [X] Add One2many order lines field 
+- PreSale order views
+    - [X] Write the XML for form view of presales model with necessary fields
+    - [X] Write the XML for list view of presales model with necessary fields
+    - [X] Add validate button UI to form view of preorder model
+    - [X] Add validate button UI to list view of preorder model
+    - [X] Write code for confirming the preorder once the button is clicked
+    - [X] Write code for mailing the pre-order creator
+- Presale order and sales order integration
+    - [X] Create a sale order when a preorder is validated
+    - [X] Extend sale.order to have new presale_order field
+    - [X] Extend sale.order form view to display the new presale_order field
+- Scheduled action automation
+    - [X] A cron action to automatically archive confirmed presales orders at 12:00AM
+- Access rights
+    - [X] Create "Presales users" group
+    - [X] Configure access rights in ir.model.access.csv of the module
+    - [X] Make the send email button only available to the presales users
