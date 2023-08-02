@@ -1,9 +1,10 @@
-from odoo import models, fields, api
+from odoo import fields, models
+
 
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
-    presale_order = fields.Many2one( "presale.order", string="Presale order" )
+    presale_order = fields.Many2one("presale.order", string="Presale order")
 
     presale_name = fields.Char(related="presale_order.name")
     presale_partner_id = fields.Many2one(related="presale_order.partner_id")

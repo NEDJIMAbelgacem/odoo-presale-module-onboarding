@@ -6,7 +6,12 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//notebook" position="inside">
-                <page t-if="presale_order" groups="presale.presale_group_user" string="PreSale Order" attrs="{'readonly': True}">
+                <page
+                    t-if="presale_order"
+                    groups="presale.presale_group_user"
+                    string="PreSale Order"
+                    attrs="{'readonly': True}"
+                >
                     <!-- <field name="presale_order" attrs="{'readonly': True}"/> -->
                     <group>
                         <field name="presale_name"/>
