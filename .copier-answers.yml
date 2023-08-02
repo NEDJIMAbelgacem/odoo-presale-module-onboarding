@@ -1,0 +1,7 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 1.0.4
+_src_path: git@github.com:odoo-ps/psbe-ps-tech-tools.git
+include_black: true
+include_flake8: true
+include_prettierxml: true
+odoo_version: 16.0
