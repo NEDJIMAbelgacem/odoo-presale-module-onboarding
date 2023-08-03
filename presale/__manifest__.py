@@ -1,5 +1,4 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
-
 {
     "name": "presale",
     "summary": "Track pre-sale related things",
@@ -8,6 +7,7 @@
     "author": "Odoo PS",
     "depends": ["base", "sale", "product"],
     "website": "https://www.odoo.com",
+    "license": "OEEL-1",
     "data": [
         "security/ir.model.access.csv",
         "security/security.xml",

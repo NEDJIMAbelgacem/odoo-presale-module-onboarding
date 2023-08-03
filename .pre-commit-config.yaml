@@ -132,5 +132,4 @@ repos:
         name: pylint with mandatory checks
         args:
           - --rcfile=.pylintrc-mandatory
-          - --exit-zero
         additional_dependencies: *pylint_deps
