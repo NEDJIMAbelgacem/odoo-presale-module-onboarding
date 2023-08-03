@@ -9,9 +9,11 @@
     "website": "https://www.odoo.com",
     "license": "OEEL-1",
     "data": [
-        "security/ir.model.access.csv",
         "security/security.xml",
-        "views/cron_action.xml",
+        "security/ir.model.access.csv",
+        "data/sequences.xml",
+        "data/cron_actions.xml",
+        "data/email_templates.xml",
         "views/presale_order_line_views.xml",
         "views/presale_views.xml",
         "views/sale_order_views.xml",

@@ -12,7 +12,6 @@
                     string="PreSale Order"
                     attrs="{'readonly': True}"
                 >
-                    <!-- <field name="presale_order" attrs="{'readonly': True}"/> -->
                     <group>
                         <field name="presale_name"/>
                         <field name="presale_partner_id"/>
